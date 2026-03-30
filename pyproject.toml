@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "resolution_week2_bacasss"
-version = "0.0.1"
+version = "0.0.4"
 dependencies = ["requests"]
 
 [project.scripts]
-cmd = "resolution_week2_bacasss.main:main"
+song = "resolution_week2_bacasss.main:main"

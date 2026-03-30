@@ -1,18 +1,23 @@
+If it doesnt work, do:
+pip install legacy-cgi   (lifesaver: https://github.com/rpetit3/fastq-dl/issues/34)
+pip install --upgrade requests
+(for some reason i cant add them to dependencies it wouldnt install)
+
 How to use:
 3 commands: lyrics, stat, guess
 
 lyrics: in the terminal, type:
-cmd lyrics "authors name no caps no special char" "song name no caps no special char"
+song lyrics "authors name no caps no special char" "song name no caps no special char"
 --preview prints the first 5 lines of the song
 --full prints the full lyrics. optional, it prints the same thing with or without it
 --full --preview or vice versa wont work as they are mutually exclusive
 
 stat: in terminal, type:
-cmd stat "authors name no caps no special char" "song name no caps no special char"
+song stat "authors name no caps no special char" "song name no caps no special char"
 prints the number of words and number of lines in the song
 
 guess: in terminal, type:
-cmd guess
+song guess
 a line of lyrics will appear with a hint of which song it came from and it will prompt you to guess the next
 line in the song
 if its correct, congrats, if its wrong, it will give you the correct answer
